@@ -9,22 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function () {
+(function agt() {
 
     var age = prompt("Age?");
     var gender = prompt("Gender?");
     var town = prompt("Town?");
-    confirm(`Is this correct? \n\n Age: ${age}\n Gender: ${gender}\n Town: ${town}`);
-    if (true) {
-        alert("Thank You!\n \n All of your data has been sold to criminals!")}
-    else {alert("oh dear we all make mitsakes!")}
+    var yn = confirm(`Is this correct? \n\n Age: ${age}\n Gender: ${gender}\n Town: ${town}`);
+    if (yn == true) {
+        alert("Thank You!\n \n All of your data has been sold to criminals!")
+    }
+        else {
+            alert("oh dear we all make mitsakes!");
+            agt()
+        }
 
 })();
-
-
-
-
-
-    // else {alert("oh dear we all make mitsakes!")};
-
-// (confirm == true)
