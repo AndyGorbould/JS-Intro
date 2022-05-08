@@ -9,8 +9,26 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function fizzbuzz() {
+    for (let i = 1; i <= 100; i++) {
 
-    // your code here
+        if (i % 15 == 0) {
+            console.log(i + " fizzbuzz")
+        }
+
+        else if (i % 3 == 0) {
+            console.log(i + " fizz");
+        }
+
+        else if (i % 5 == 0) {
+            console.log(i + " buzz");
+        }
+
+        else {
+        console.log(i);
+        }
+
+    }
+
 
 })();
