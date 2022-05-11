@@ -13,4 +13,21 @@
 
     // your code here
 
+    let pass = document.getElementById("pass-one");
+    let indic = document.getElementById("counter");
+
+    pass.addEventListener("input", () => {
+        let count = pass.value.length;
+
+    indic.innerHTML = count + "/10";
+    });
+
+
+    // console.log(count);
+
+
+
 })();
+
+
+// check https://www.youtube.com/watch?v=bIk5RBnfP24

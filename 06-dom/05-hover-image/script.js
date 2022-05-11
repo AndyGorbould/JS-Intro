@@ -9,15 +9,27 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     // your code here
-    let grabSource = document.getElementsByTagName("img");
+    // let grabSource = document.getElementsByTagName("img");
 
-    console.log(grabSource);
+    // console.log(grabSource);
 
-        let grabLink = grabSource.getAttributeNS("data-hover:");
+    //     let grabLink = grabSource.getAttributeNS("data-hover:");
 
-        console.log(grabSource.getAttributeNS("data-hover:"));
+    //     console.log(grabSource.getAttributeNS("data-hover:"));
+
+
+
+    let img = document.querySelector('img');
+    let start = img.src;
+    let hover = img.getAttribute('data-hover'); //specified in img tag
+
+    img.onmouseover = () => { img.src = hover; }
+    img.onmouseout = () => { img.src = start; } //to revert back to start
 
 })();
+
+
+// https://www.codegrepper.com/code-examples/javascript/change+image+on+hover+javascript
