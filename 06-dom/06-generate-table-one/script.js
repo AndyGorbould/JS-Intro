@@ -12,15 +12,30 @@
 (function() {
 
     // your code here
-    let target = document.getElementById("target");
-    let newTable = document.createElement("table");
-
-    document.target.appendChild(newTable);
+    function tableCreate() {
+        const body = document.getElementById("target");
+        let tbl = document.createElement("table");
+      
+        for (let i = 0; i < 10; i++) {
+          const tr = tbl.insertRow();
+          for (let j = 0; j < 1; j++) {
+            if (i === 2 && j === 1) {
+              break;
+            } else {
+              const td = tr.insertCell();
+            }
+          }
+        }
+        body.appendChild(tbl);
+      }
+      
+      tableCreate();
 
 })();
 
 
-
+// using https://stackoverflow.com/questions/14643617/create-table-using-javascript
+// I don't get this :/ the way I expected totally doesn't work
 
 
 //      document.createElement("table");, "td", "tr"*10 
