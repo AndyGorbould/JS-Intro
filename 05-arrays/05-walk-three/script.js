@@ -44,8 +44,8 @@
     const btn = document.getElementById('run');
     btn.onclick = function () {
 
-        people.forEach(function(a, b, c) {
-            console.log(a.firstname + " " + a.lastname)
+        people.forEach(function(a) {
+            console.log(`${a.firstname} ${a.lastname}`)
         })
 
 
@@ -61,3 +61,5 @@
 
 
 // for works, forEach needs research...
+// added template literals
+// ${a.firstname} ${a.lastname}
