@@ -93,11 +93,13 @@
     const btn = document.getElementById('run');
     btn.onclick = function () {
 
+        let ln = "Dupont";
+        let fn = "Jean";
 
         let email = people.find(findLastName).email;
 
         function findLastName(people) {
-            return people.lastname === "Dupont";
+            return (people.lastname === ln && people.firstname === fn);
         }
 
         console.log(email);
@@ -105,7 +107,3 @@
     }
 
 })();
-
-
-
-// not searching for first && last name yet
